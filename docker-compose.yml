@@ -22,3 +22,4 @@ services:
       MYSQL_DATABASE: "testedb"
     ports:
       - "3306:3306"
+    TZ: "America/Bahia"
