@@ -10,3 +10,26 @@
 
 
 https://github.com/meob/my2Collector
+
+
+#MySQL
+
+DROP PROCEDURE IF EXISTS ROWPERROW;
+DELIMITER ;;
+
+
+DELIMITER ;;
+CREATE PROCEDURE ROWPERROW()
+BEGIN
+DECLARE n INT DEFAULT 1000000;
+DECLARE i INT DEFAULT 14;
+SET i=14;
+WHILE i<n DO 
+  INSERT INTO product(ID, name, description) Values (i, 'p', 'desc');
+  SET i = i + 1;
+END WHILE;
+End;
+;;
+
+
+CALL ROWPERROW();
