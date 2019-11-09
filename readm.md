@@ -7,3 +7,6 @@
     mysql --user=root -p < tmp/my2.sql
 
     mysql -Uroot -p mysql2 
+
+
+https://github.com/meob/my2Collector
