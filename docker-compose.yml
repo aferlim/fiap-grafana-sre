@@ -20,6 +20,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "MySql2019!"
       MYSQL_DATABASE: "testedb"
+      TZ: "America/Bahia"
     ports:
       - "3306:3306"
-    TZ: "America/Bahia"
